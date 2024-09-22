@@ -1,0 +1,60 @@
+.sidebarOption {
+    background-color: #e0e0e0;
+    color: black;
+    transition: all ease-in 0.2s;
+    text-align: left;
+    width: 50%;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 5px 0px;
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+
+  }
+  
+  .sidebarOption:hover {
+    background-color: #333;
+    color: white;
+  }
+  
+   .sidebar {
+    color: black;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  } 
+
+  
+  .heading {
+    text-align: left; /* Align heading text to the left */
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.25rem 1rem; /* Adjust padding if needed */
+    border: 1px solid whitesmoke;
+    border-radius: 6px;
+    background-color: lightblue;
+    margin-bottom: 10px; /* Add margin for spacing */
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .icon {
+    font-size: 20px; /* Default icon size */
+    margin-right: 10px; /* Space between icon and text */
+  }
+  
+  .icon-lg {
+    font-size: 24px; /* Larger icon size */
+  }
+
+
+
+  /* src/components/IconImage.css */
+.icon-image {
+  width: 24px; /* Adjust size as needed */
+  height: 24px; /* Adjust size as needed */
+  object-fit: contain; /* Ensure the image scales correctly */
+}

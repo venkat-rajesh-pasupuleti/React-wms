@@ -1,0 +1,138 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* App.css */
+/* Updated App.css */
+
+.headerr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin: auto 20px;
+  color: #3a3f4a;
+  box-shadow: #3a3f4a;
+  text-decoration: none; /* Remove underline */
+  border: none; /* Border to create the box */
+  padding: 0; /* Increase padding for better spacing */
+  border-radius: none; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.headerr:hover {
+  color: black;
+  background-color: none;
+  text-decoration: none; /* Ensure no underline on hover */
+}
+
+.wms-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: 2px solid black; /* Border color for the box */
+  border-radius: 6px;
+  background-color: #f0f0f0; /* Background color for the box */
+  height:  80px;
+  width: 80px;
+}
+
+.wms-box .faWarehouse {
+  margin-bottom: 2px; /* Adjust spacing between icon and text */
+  color: green; /* Set icon color */
+  font-size: 24px;
+}
+
+.wms-box span {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 2px;
+
+}.custom-height{
+  height: 300px;
+}
+
+
+.receipt-container {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;  /* Ensure no horizontal overflow */
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+
+/* App.css */
+.main {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.Hero {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  max-width: 100%;
+  box-sizing: border-box;
+  transition: margin-left 0.3s ease; /* Smooth transition when toggling sidebar */
+}
+
+.sidebar-toggle {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.sidebar {
+  transition: width 0.3s ease;
+  width: 250px;
+}
+
+.sidebar.collapsed {
+  width:60 px;
+}
+
+

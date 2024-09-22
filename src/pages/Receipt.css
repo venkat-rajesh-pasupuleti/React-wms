@@ -1,0 +1,219 @@
+/* General Styles */
+.info-box {
+  width: 100%; /* Use full width of parent container */
+  max-width: 400px; /* Maximum width */
+  border: 2px solid lightgreen;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.info-header {
+  font-weight: bold;
+  background-color: lightgrey;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+}
+
+.po-number-input {
+  width: 150px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* Button Styles */
+.btn-fetch, .btn-action {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-fetch {
+  background-color:  #007bff;
+  font-size: 14px;
+  color: #333;
+}
+
+.btn-fetch:hover {
+  background-color:  #0056b3;
+  color: white;
+}
+
+.btn-action {
+  background-color: #28a745;
+  margin: 5px;
+}
+
+.btn-action:hover {
+  background-color: #218838;
+  color: white;
+  font-weight: bold;
+}
+
+
+/* Table and Scroll Options */
+.table-scroll {
+  overflow-x: auto;
+  max-height: 410px; /* Set maximum height for scroll */
+}
+
+.po-details-table-container {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ensure it fits within its parent container */
+  box-sizing: border-box;
+}
+
+
+.button-container-top{
+  display: flex;
+  gap:  10px;
+}
+
+.po-details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+.po-details-table th,
+.po-details-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.po-details-table th {
+  background-color: white; /* Light green color for grid headers */
+}
+
+.po-details-table tbody tr:nth-of-type(even) {
+  background-color: lightgray;
+}
+
+.po-details-table tbody tr:nth-of-type(odd) {
+  background-color: white;
+}
+
+/* Inner Grid Styles */
+.line-records-table-container {
+  max-height: 200px; /* Adjust based on your layout */
+  overflow-y: auto;
+  margin-top: 10px;
+}
+
+.line-records-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.line-records-table th, .line-records-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.line-records-table th {
+  background-color: lightgreen; /* Light green color for inner grid headers */
+}
+
+/* Action Buttons */
+.delete-icon, .collapse-all-icon, .arrow-icon {
+  cursor: pointer;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.delete-icon {
+  background-color: lightcyan;
+}
+
+.delete-icon:hover {
+  background-color: rgb(251, 65, 65);
+  color: white;
+}
+
+.collapse-all-icon {
+  background-color: lightgray;
+}
+
+.collapse-all-icon:hover {
+  background-color: darkgray;
+  color: white;
+}
+
+.arrow-icon {
+  background-color: transparent; /* Make sure arrows are visible */
+  font-size: 16px;
+}
+
+/* Receipt Number */
+.receipt-number {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Centering Buttons Container */
+.button-container {
+  display: flex;
+  justify-content: center; /* Center the buttons */
+  margin-top: 10px;
+}
+
+/* Reference Column */
+
+/* Row Styles */
+.even-row {
+  background-color: #f9f9f9; /* Light gray for even rows */
+}
+
+.odd-row {
+  background-color: #ffffff; /* White for odd rows */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .info-box {
+    width: 100%;
+    max-width: none; /* Remove max-width on smaller screens */
+  }
+
+  .po-details-table th, .po-details-table td,
+  .line-records-table th, .line-records-table td {
+    font-size: 14px;
+    padding: 6px;
+  }
+}
+
+/* Table Header Arrow Icons */
+.po-details-table-container h3, .line-records-table-container h4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow-icon {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.arrow-icon:hover {
+  color: dodgerblue;
+}
+
+
+
+
